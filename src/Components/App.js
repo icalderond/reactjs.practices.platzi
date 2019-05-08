@@ -5,6 +5,7 @@ import Layout from '../Components/Layout'
 //Pages
 import Badges from '../Pages/Badges'
 import BadgeNew from '../Pages/BadgeNew'
+import NotFound from '../Pages/NotFound';
 
 
 function App(){
@@ -14,6 +15,7 @@ function App(){
                 <Switch>
                     <Route exact path='/badges/new' component={BadgeNew}/>
                     <Route exact path='/badges' component={Badges}/>
+                    <Route component={NotFound}/>
                 </Switch>
             </Layout>
         </BrowserRouter>
