@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './styles/Badges.css'
 import logo from '../images/badge-header.svg'
@@ -54,24 +55,13 @@ class Badges extends React.Component{
 
                 <div className='Badges__container'>
                     <div className='Badges__buttons'>
-                        <a href='/badges/new' className='btn btn-primary'>New Badge</a>
+                        <Link to='/badges/new' className='btn btn-primary'>New Badge</Link>
                     </div>
                 </div>
 
                 <div className='Badeges__list'>
                     <div className='Badges__container'>
                         <BadgesList badges={this.state.data}/>
-                        {/* <div className='list-unstyled'>
-                        {
-                            this.state.data.map(badge=>{
-                                return (
-                                <li key={badge.id}>
-                                <p> {badge.firstName} {badge.lastName}  </p>
-                                </li>
-                                )
-                            })
-                        }
-                        </div> */}
                     </div>
                 </div>
             </div>
