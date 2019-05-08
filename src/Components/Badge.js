@@ -1,20 +1,24 @@
 import React from 'react'
 import confLogo from '../Images/badge-header.svg'
+import './styles/Badge.css'
 
 class Badge extends React.Component{
     render(){
         return (
-            <div>
-                <div>
+            <div className='Badge'>
+                <div className='Badge__header'>
                     <img src={confLogo} alt='Logo de la conferencia'/>
                 </div>
-                <div>
-                    <img src='https://en.gravatar.com/avatar?id=identicon' alt='avatar'/>
-                    <h1>Richard <br/> Kaufman</h1>
+                <div className='Badge__section-name'>
+                    <img className='Badge__avatar' src='https://en.gravatar.com/avatar?id=icalderond' alt='avatar'/>
+                    <h1>Israel <br/> Calderon</h1>
                 </div>
-                <div>
-                    <p>Frontend Engineer</p>
-                    <p>@icalderond</p>
+                <div className='Badge__section-info'>
+                    <h3>Frontend Engineer</h3>
+                    <div>@icalderond</div>
+                </div>
+                <div className='Badge__footer'>
+                    #icalderond
                 </div>
             </div>
         )
