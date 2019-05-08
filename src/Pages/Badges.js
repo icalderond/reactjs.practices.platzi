@@ -41,7 +41,7 @@ class Badges extends React.Component{
 
     render(){
         return(
-            <div>
+            <React.Fragment>
                 <div className='Badges'>
                     <div className='Badges__hero'>
                         <div className='Badges__container'>
@@ -61,7 +61,7 @@ class Badges extends React.Component{
                         <BadgesList badges={this.state.data}/>
                     </div>
                 </div>
-            </div>
+            </React.Fragment>
             )
     }
 }
